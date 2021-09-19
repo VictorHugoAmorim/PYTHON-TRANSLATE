@@ -1,8 +1,8 @@
 import speech_recognition as sr
 import pyaudio
 import time
-#from googletrans import Translator
-from translate import Translator
+from googletrans import Translator
+#from translate import Translator
 
 #Função para ouvir e reconhecer a fala
 def ouvir_microfone():
@@ -49,14 +49,12 @@ if start.upper() == frase.upper():
     pass
     while True:
         #Gerando tradução
-        s = Translator(from_lang="Portuguese", to_lang="English")
+        ''' s = Translator(from_lang="Portuguese", to_lang="english")
         frase=ouvir_microfone()
-        res= s.translate(frase)
-        '''
-        #Gerando tradução
+        res= s.translate(frase)'''
         trad = Translator()
         frase=ouvir_microfone()
-        res = trad.translate(str(frase), dest="en").text'''
+        res = trad.translate(str(frase), dest="en").text
         print(f'Português: "{frase.upper()}"\nInglês: "{res}"')
         if "Encerrar".upper() in frase.upper():
             print('Até logo')
