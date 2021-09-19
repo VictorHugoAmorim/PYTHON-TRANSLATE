@@ -1,2 +1,2 @@
 # PYTHON-TRANSLATE
-Traduções de texto utilizando a biblioteca Googletrans
+Traduções de texto utilizando a biblioteca Translate
