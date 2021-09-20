@@ -1,1 +1,2 @@
-pip install translate
+pip install googletrans
+pip install speech_recognition
